@@ -6,7 +6,7 @@ I'm using this checklist to track the project requirements.
 ## Core Setup
 [ Y ] Otel App: Stand up the app locally.
 
-[ ] Live Deployment: Host the app so it's reachable
+[ Y ] Live Deployment: Host the app so it's reachable
 
 [ Y ] CLI & Grouping: Initialize the project via CLI and ensure all checks are inside the "ChecklyChallenge" group.
 
