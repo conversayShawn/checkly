@@ -1,4 +1,5 @@
 import { defineConfig } from 'checkly' 
+import { Frequency } from 'checkly/constructs'
 
 export default defineConfig({
   projectName: 'OTel Take Home',
@@ -8,5 +9,13 @@ export default defineConfig({
     browserChecks: {
       testMatch: "__checks__/*.spec.js"
     },
-  }
+    playwrightConfigPath: "playwright.config.js",
+    playwrightChecks: [{
+      name: 'Firefox10',
+      logicalId: 'firefox-10',
+      pwProjects: ['firefox'],
+      tags: ['Firefox'],
+      frequency: Frequency.EVERY_5M
+    }]
+  },
 })

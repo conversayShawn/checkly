@@ -11,7 +11,7 @@ I'm using this checklist to track the project requirements.
 [ Y ] CLI & Grouping: Initialize the project via CLI and ensure all checks are inside the "ChecklyChallenge" group.
 
 ## Checks to Deploy
-[ ] Playwright Check: 10+ tests running in Firefox every 5 minutes (Tag: FIREFOX).
+[ Y ] Playwright Check: 10+ tests running in Firefox every 5 minutes (Tag: FIREFOX).
 
 [ ] Dynamic Browser Check: Use environment variables for the URL and include logic to flap between FAILING and DEGRADED (Tag: UI).
 
