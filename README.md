@@ -8,7 +8,7 @@ I'm using this checklist to track the project requirements.
 
 [ ] Live Deployment: Host the app so it's reachable
 
-[ ] CLI & Grouping: Initialize the project via CLI and ensure all checks are inside the "ChecklyChallenge" group.
+[ Y ] CLI & Grouping: Initialize the project via CLI and ensure all checks are inside the "ChecklyChallenge" group.
 
 ## Checks to Deploy
 [ ] Playwright Check: 10+ tests running in Firefox every 5 minutes (Tag: FIREFOX).
