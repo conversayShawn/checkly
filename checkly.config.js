@@ -6,9 +6,9 @@ export default defineConfig({
   logicalId: 'otel-take-home',
   checks: {
     locations: ['af-south-1'],
-    // browserChecks: {
-    //   testMatch: "__checks__/*.spec.js", 
-    // },
+    browserChecks: {
+      testMatch: "__checks__/*.spec.js", 
+    },
     playwrightConfigPath: "playwright.config.js",
     playwrightChecks: [
       {
@@ -20,8 +20,8 @@ export default defineConfig({
         testMatch: "__checks__/playwright.spec.js"
       },
       {
-        name: 'Flaky',
-        logicalId: 'degraded-failed',
+        name: 'Browser - UI Degraded/Failed',
+        logicalId: 'ui-degraded-failed',
         tags: ['UI'],
         testMatch: "__checks__/browser.spec.js"
       }
