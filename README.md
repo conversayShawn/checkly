@@ -15,11 +15,13 @@ I'm using this checklist to track the project requirements.
 
 [ Y ] Dynamic Browser Check: Use environment variables for the URL and include logic to flap between FAILING and DEGRADED (Tag: UI).
 
-[ ] Multistep Check: A single spec file with multiple requests, each defined as a unique step (Tag: DEGRADED).
+[ Y ] Multistep Check: A single spec file with multiple requests, each defined as a unique step (Tag: DEGRADED).
 
 [ Y ] API Check: URL set dynamically via Checkly environment variables (Tag: API).
 
 # Configuration & Infrastructure
+[ Y ] All checks for review in a group called "ChecklyChallenge".
+
 [ ] Retry Strategy: Apply a different retry strategy to every check created.
 
 [ ] Alerting: Set up a custom webhook that passes the error message and check location.

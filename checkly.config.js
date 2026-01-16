@@ -1,20 +1,24 @@
 import { defineConfig } from 'checkly' 
-import { Frequency } from 'checkly/constructs'
+import { Frequency, CheckGroupV2 } from 'checkly/constructs'
 
-
+const checklyChallenge = new CheckGroupV2('checkly-challenge', {
+  name: 'ChecklyChallenge',
+  locations: ['af-south-1']
+})
 
 export default defineConfig({
   projectName: 'OTel Take Home',
   logicalId: 'otel-take-home',
   repoUrl: 'https://github.com/conversayShawn/checkly',
   checks: {
-    locations: ['af-south-1'],
     browserChecks: {
+      groupId: 'checkly-challenge',
       testMatch: "__checks__/*.check.js", 
     },
     playwrightConfigPath: "playwright.config.js",
     playwrightChecks: [
       {
+        groupId: 'checkly-challenge',
         name: '10 Fire Fox Tests',
         logicalId: 'firefox-10',
         pwProjects: ['firefox'],
@@ -22,12 +26,6 @@ export default defineConfig({
         frequency: Frequency.EVERY_5M,
         testMatch: "__checks__/playwright.spec.js"
       },
-      // {
-      //   name: 'Browser - UI Degraded/Failed',
-      //   logicalId: 'ui-degraded-failed',
-      //   tags: ['UI'],
-      //   testMatch: "__checks__/browser.spec.js"
-      // },
     ]
-  },
+  }
 })
