@@ -13,7 +13,7 @@ I'm using this checklist to track the project requirements.
 ## Checks to Deploy
 [ Y ] Playwright Check: 10+ tests running in Firefox every 5 minutes (Tag: FIREFOX).
 
-[ ] Dynamic Browser Check: Use environment variables for the URL and include logic to flap between FAILING and DEGRADED (Tag: UI).
+[ Y ] Dynamic Browser Check: Use environment variables for the URL and include logic to flap between FAILING and DEGRADED (Tag: UI).
 
 [ ] Multistep Check: A single spec file with multiple requests, each defined as a unique step (Tag: DEGRADED).
 
