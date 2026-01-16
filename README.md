@@ -17,7 +17,7 @@ I'm using this checklist to track the project requirements.
 
 [ ] Multistep Check: A single spec file with multiple requests, each defined as a unique step (Tag: DEGRADED).
 
-[ ] API Check: URL set dynamically via Checkly environment variables (Tag: API).
+[ Y ] API Check: URL set dynamically via Checkly environment variables (Tag: API).
 
 # Configuration & Infrastructure
 [ ] Retry Strategy: Apply a different retry strategy to every check created.

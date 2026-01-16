@@ -21,12 +21,12 @@ export default defineConfig({
         frequency: Frequency.EVERY_5M,
         testMatch: "__checks__/playwright.spec.js"
       },
-      {
-        name: 'Browser - UI Degraded/Failed',
-        logicalId: 'ui-degraded-failed',
-        tags: ['UI'],
-        testMatch: "__checks__/browser.spec.js"
-      },
+      // {
+      //   name: 'Browser - UI Degraded/Failed',
+      //   logicalId: 'ui-degraded-failed',
+      //   tags: ['UI'],
+      //   testMatch: "__checks__/browser.spec.js"
+      // },
     ]
   },
 })
