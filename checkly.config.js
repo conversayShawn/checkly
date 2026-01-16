@@ -10,7 +10,7 @@ export default defineConfig({
   checks: {
     locations: ['af-south-1'],
     browserChecks: {
-      testMatch: "__checks__/*.spec.js", 
+      testMatch: "__checks__/*.check.js", 
     },
     playwrightConfigPath: "playwright.config.js",
     playwrightChecks: [
