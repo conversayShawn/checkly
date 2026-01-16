@@ -6,6 +6,7 @@ import { Frequency } from 'checkly/constructs'
 export default defineConfig({
   projectName: 'OTel Take Home',
   logicalId: 'otel-take-home',
+  repoUrl: 'https://github.com/conversayShawn/checkly',
   checks: {
     locations: ['af-south-1'],
     browserChecks: {
