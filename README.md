@@ -22,7 +22,7 @@ I'm using this checklist to track the project requirements.
 # Configuration & Infrastructure
 [ Y ] All checks for review in a group called "ChecklyChallenge".
 
-[ ] Retry Strategy: Apply a different retry strategy to every check created.
+[ Y ] Retry Strategy: Apply a different retry strategy to every check created.
 
 [ ] Alerting: Set up a custom webhook that passes the error message and check location.
 

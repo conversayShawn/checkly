@@ -12,13 +12,13 @@ export default defineConfig({
   repoUrl: 'https://github.com/conversayShawn/checkly',
   checks: {
     browserChecks: {
-      groupId: 'checkly-challenge',
+      group: 'checkly-challenge',
       testMatch: "__checks__/*.check.js", 
     },
     playwrightConfigPath: "playwright.config.js",
     playwrightChecks: [
       {
-        groupId: 'checkly-challenge',
+        group: 'checkly-challenge',
         name: '10 Fire Fox Tests',
         logicalId: 'firefox-10',
         pwProjects: ['firefox'],

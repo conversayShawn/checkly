@@ -5,20 +5,12 @@ export default defineConfig({
   use: {
     baseURL: 'http://3.143.230.92:8080',
   },
-  
+  retries: 0,
   projects: [
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
-    // {
-    //   name: 'safari',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
   ],
 
 })

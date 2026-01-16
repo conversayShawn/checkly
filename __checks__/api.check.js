@@ -1,7 +1,12 @@
-import { ApiCheck } from "checkly/constructs";
+import { ApiCheck, RetryStrategyBuilder } from "checkly/constructs";
 
 new ApiCheck('env-var-api', {
     name: 'env var api check',
+    retryStrategy: RetryStrategyBuilder.fixedStrategy({
+        baseBackoffSeconds: 30,
+        maxRetries: 6,
+        sameRegion: false
+    }),
     tag: ['API'],
     request: {
         method: 'GET',
