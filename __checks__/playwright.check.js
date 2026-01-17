@@ -1,9 +1,10 @@
-import { PlaywrightCheck } from "checkly/constructs";
+import { PlaywrightCheck, RetryStrategyBuilder } from "checkly/constructs";
 import { checklyChallenge } from "./group.check";
 
 new PlaywrightCheck('firefox-10', {
     name: '10 Fire Fox Tests',
     group: checklyChallenge,
+    retries: RetryStrategyBuilder.noRetries(),
     pwProjects: ['firefox'],
     tags: ['FIREFOX'],
     frequency: Frequency.EVERY_5M,

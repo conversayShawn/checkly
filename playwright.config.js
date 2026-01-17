@@ -5,7 +5,6 @@ export default defineConfig({
   use: {
     baseURL: 'http://3.143.230.92:8080',
   },
-  retries: 0,
   projects: [
     {
       name: 'firefox',
