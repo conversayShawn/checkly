@@ -5,7 +5,7 @@ new PlaywrightCheck('firefox-10', {
     name: '10 firefox tests',
     playwrightConfigPath: "../../playwright.config.js",
     group: checklyChallenge,
-    retries: 0,
+    retries: 3,
     pwProjects: 'firefox',
     tags: ['FIREFOX'],
     frequency: Frequency.EVERY_5M,

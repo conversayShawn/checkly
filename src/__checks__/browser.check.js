@@ -7,7 +7,7 @@ new BrowserCheck('intermittent-degrade_fail-browser-check', {
     frequency: Frequency.EVERY_15M,
     retryStrategy: RetryStrategyBuilder.exponentialStrategy({
         baseBackoffSeconds: 5,
-        maxRetries: 4,
+        maxRetries: 2,
         sameRegion: false,
     }),
     tags: ['UI'],
