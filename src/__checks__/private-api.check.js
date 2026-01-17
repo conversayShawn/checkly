@@ -12,6 +12,6 @@ new ApiCheck('private-location-api-check', {
     }),
     request: {
         method: 'GET',
-        url: 'http://172.31.12.218',
+        url: '{{PRIVATE_AWS_URL}}:8080',
     }
 })
