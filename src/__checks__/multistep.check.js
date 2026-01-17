@@ -1,5 +1,5 @@
 import { Frequency, MultiStepCheck, RetryStrategyBuilder } from "checkly/constructs";
-import { checklyChallenge } from "./group.check";
+import { checklyChallenge } from "../helpers/group.check";
 
 new MultiStepCheck('multistep-browser-check', {
     name: 'multistep browser check',

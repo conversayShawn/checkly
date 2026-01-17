@@ -1,5 +1,5 @@
 import { BrowserCheck, Frequency, RetryStrategyBuilder } from "checkly/constructs";
-import { checklyChallenge } from "./group.check";
+import { checklyChallenge } from "../helpers/group.check";
 
 new BrowserCheck('intermittent-degrade_fail-browser-check', {
     name: 'intermittent critical browser check',
