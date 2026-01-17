@@ -1,6 +1,6 @@
 # Checkly Challenge - Take Home Project
 
-## Note: 
+## Note: All checks are running on virtual machines
 
 ### Task List
 I'm using this checklist to track the project requirements.
