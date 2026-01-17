@@ -24,9 +24,9 @@ I'm using this checklist to track the project requirements.
 
 [ Y ] Retry Strategy: Apply a different retry strategy to every check created.
 
-[ ] Alerting: Set up a custom webhook that passes the error message and check location.
+[ Y ] Alerting: Set up a custom webhook that passes the error message and check location.
 
-[ ] Private Locations: Configure local agents to run all the checks listed above from my machine.
+[ Y ] Private Locations: Configure check to run fom private machine.
 
 [ ] Prometheus: Verify that the deployed checks are successfully generating metrics.
 

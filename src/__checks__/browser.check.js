@@ -5,11 +5,7 @@ new BrowserCheck('intermittent-degrade_fail-browser-check', {
     name: 'intermittent critical browser check',
     group: checklyChallenge,
     frequency: Frequency.EVERY_15M,
-    retryStrategy: RetryStrategyBuilder.exponentialStrategy({
-        baseBackoffSeconds: 5,
-        maxRetries: 2,
-        sameRegion: false,
-    }),
+    retryStrategy: RetryStrategyBuilder.noRetries(),
     tags: ['UI'],
     code:
     {
