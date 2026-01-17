@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
-  testDir: '__checks__/*.spec.js',
+  testDir: './src/specs',
   use: {
     baseURL: 'http://3.143.230.92:8080',
   },

@@ -5,7 +5,7 @@ export const customWebhook = new WebhookAlertChannel("webhook-alert", {
   method: "POST",
   url: new URL(process.env.CHECKLY_WEBHOOK || 'https://wha993b93770e2b45531.free.beeceptor.com'),
   sendFailure: true,
-  sendDegraded: false,
+  sendDegraded: true,
   template: JSON.stringify({
     title: "{{ALERT_TITLE}}",
     type: "{{ALERT_TYPE}}",
