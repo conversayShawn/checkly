@@ -10,6 +10,6 @@ new ApiCheck('env-var-api', {
     tag: ['API'],
     request: {
         method: 'GET',
-        url: `${{AWS_URL}}/api/products`,
+        url: '{{AWS_URL}}/api/products',
     }
 })

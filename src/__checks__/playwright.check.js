@@ -2,7 +2,7 @@ import { PlaywrightCheck, RetryStrategyBuilder } from "checkly/constructs";
 import { checklyChallenge } from "../helpers/group.check";
 
 new PlaywrightCheck('firefox-10', {
-    name: '10 Fire Fox Tests',
+    name: '10 firefox tests',
     group: checklyChallenge,
     retries: RetryStrategyBuilder.noRetries(),
     pwProjects: ['firefox'],
