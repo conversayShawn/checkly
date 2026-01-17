@@ -9,7 +9,7 @@ new ApiCheck('env-var-api', {
         maxRetries: 6,
         sameRegion: false
     }),
-    tag: ['API'],
+    tags: ['API'],
     request: {
         method: 'GET',
         url: '{{AWS_URL}}/api/products',
