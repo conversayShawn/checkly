@@ -5,6 +5,6 @@ export default defineConfig({
   logicalId: 'otel-take-home',
   repoUrl: 'https://github.com/conversayShawn/checkly',
   checks: {
-    testMatch: ""
+    playwrightConfigPath: 'playwright.config.js',
   }
 })

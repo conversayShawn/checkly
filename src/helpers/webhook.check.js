@@ -3,7 +3,7 @@ import { WebhookAlertChannel } from "checkly/constructs"
 export const customWebhook = new WebhookAlertChannel("webhook-alert", {
   name: "webhook - error and location",
   method: "POST",
-  url: new URL(process.env.CHECKLY_WEBHOOK),
+  url: new URL(process.env.CHECKLY_WEBHOOK || 'https://wha993b93770e2b45531.free.beeceptor.com'),
   sendFailure: true,
   sendDegraded: false,
   template: JSON.stringify({
