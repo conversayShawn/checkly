@@ -1,8 +1,8 @@
 {
-  "name": "checkly",
+  "name": "boilerlate-project",
   "version": "1.0.0",
-  "description": "## Note: All checks are running on virtual machines",
-  "main": "checkly.config.js",
+  "description": "",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
+    "@checkly/playwright-helpers": "^1.0.4",
+    "@kt3k/license-checker": "^3.2.2",
+    "@playwright/test": "^1",
+    "@umbrelladocs/linkspector": "^0.4.7",
     "checkly": "latest",
-    "jiti": "^2"
+    "dotenv": "^16.0.0",
+    "jiti": "^2",
+    "markdown-toc": "^1.2.0",
+    "markdownlint-cli": "0.47.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
   }
 }
