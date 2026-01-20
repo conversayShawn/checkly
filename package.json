@@ -12,9 +12,7 @@
   "devDependencies": {
     "@checkly/playwright-helpers": "^1.0.4",
     "@kt3k/license-checker": "^3.2.2",
-    "@playwright/test": "^1",
     "@umbrelladocs/linkspector": "^0.4.7",
-    "checkly": "latest",
     "dotenv": "^16.0.0",
     "jiti": "^2",
     "markdown-toc": "^1.2.0",
