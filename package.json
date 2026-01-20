@@ -1,0 +1,17 @@
+{
+  "name": "checkly",
+  "version": "1.0.0",
+  "description": "## Note: All checks are running on virtual machines",
+  "main": "checkly.config.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "checkly": "latest",
+    "jiti": "^2"
+  }
+}
